@@ -14,6 +14,8 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+.vscode/*
+*.exe
 
 # Windows shortcuts
 *.lnk
