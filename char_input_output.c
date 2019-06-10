@@ -36,11 +36,13 @@ void funcPrint()
     long int longtest = 1000;
     printf("the long is %ld \n",longtest);
 
-    /* char str1 = "LOVE"; */ 
+    char input_char[10];  //必须指定字符串的长度
+    scanf("%s",&input_char);
+    printf("You entered %s",input_char);
 
-    printf("THE STRING IS %s\n","LOVE");
-    printf("THE STRING IS %10s\n","LOVE");
-    printf("THE STRING IS %-10s\n","LOVE");
-    printf("THE STRING IS %10.3s\n","LOVE"); //截取长度
-    printf("THE STRING IS %-10.3s\n","LOVE");
+    printf("THE STRING IS %s\n",input_char);
+    printf("THE STRING IS %10s\n",input_char);
+    printf("THE STRING IS %-10s\n",input_char);
+    printf("THE STRING IS %10.3s\n",input_char); //截取长度
+    printf("THE STRING IS %-10.3s\n",input_char);
 }
