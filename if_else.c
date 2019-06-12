@@ -39,4 +39,12 @@ void main()
     printf("NOW i is %d \n",i);
     printf("NOW haha is %d \n",haha);
     printf("NOW hehe is %d \n",hehe);
+
+#undef NUM  /*删除预先定义的宏 */
+
+#ifdef NUM
+    haha = 50;
+#endif
+    
+    printf("NOW haha is %d \n",haha);
 }
