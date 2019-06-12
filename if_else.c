@@ -4,6 +4,17 @@
 void main()
 {
     int i = 0;
+    int haha = 0;
+    int hehe = 0;
+
+#ifdef NUM   /* 是否被define */
+    haha = 50;
+#endif
+
+#ifndef HEHE  /* 是否没有被define */
+    hehe = 40;
+#endif
+
 #if NUM>50
     i++;
 #else
@@ -26,4 +37,6 @@ void main()
 #endif
 
     printf("NOW i is %d \n",i);
+    printf("NOW haha is %d \n",haha);
+    printf("NOW hehe is %d \n",hehe);
 }
